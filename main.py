@@ -30,7 +30,7 @@ def login():
     if result:
         return render_template("html/acesso.html", nomeUsuario=result.nome)
     else:
-        flash('Usuário ou senha inválidos')
+        flash('Usuário ou senha invalidos')
         return redirect("/")
 
 if __name__ == '__main__':
